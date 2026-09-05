@@ -181,3 +181,10 @@ uploaded-video preview does not overwrite the selected camera's live feed.
 
 ## Operations dashboard design
 The frontend is intentionally event-centric rather than rendering every camera stream at once. It borrows useful product patterns from the reviewed Chitra video-processing dashboard: a decoupled processing layer, centralized alert API, responsive React UI, searchable/filterable event queues, evidence review, and operational status visibility. The Border Sentinel implementation remains domain-specific to border surveillance and keeps live camera playback on demand.
+
+## Team / Contributors
+
+| Name | GitHub | Contribution |
+|---|---|---|
+| Prakash | [@Prakashsingh2007](https://github.com/Prakashsingh2007) | Development — backend, AI pipeline, frontend |
+| Nitish Solanki | [@Nitish6769](https://github.com/Nitish6769) | Ideas / planning |
