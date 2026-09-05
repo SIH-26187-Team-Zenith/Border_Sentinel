@@ -187,4 +187,4 @@ The frontend is intentionally event-centric rather than rendering every camera s
 | Name | GitHub | Contribution |
 |---|---|---|
 | Prakash | [@Prakashsingh2007](https://github.com/Prakashsingh2007) | Development — backend, AI pipeline, frontend |
-| Nitish Solanki | [@Nitish6769](https://github.com/Nitish6769) | Ideas / planning |
+| Nitish Solanki | [@Nitish6769](https://github.com/Nitish6769) | Ideas / planning / debugging|
