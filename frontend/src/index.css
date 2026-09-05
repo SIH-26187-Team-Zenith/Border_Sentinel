@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/*
+  Border Sentinel design tokens — "checkpoint at dusk."
+  A border operations room isn't a generic dark SaaS dashboard: it's a
+  night shift, sodium perimeter lighting, radar glow, desert terrain.
+  These overrides retint Tailwind's slate/sky/emerald scales in one place
+  so every page inherits the same palette without per-page class changes.
+
+    slate  -> night/surface neutrals (warm-tinted charcoal, not cold gray)
+    sky    -> primary accent: dusty terracotta/amber ("horizon" glow)
+    emerald-> secondary accent: muted signal teal ("live" state)
+  amber/orange/red keep their default meaning (severity) — untouched.
+*/
+@theme {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --color-slate-950: #10151f;
+  --color-slate-900: #1a2130;
+  --color-slate-800: #293245;
+  --color-slate-700: #3d4760;
+  --color-slate-600: #6b6459;
+  --color-slate-500: #8c8474;
+  --color-slate-400: #a79f8e;
+  --color-slate-300: #c7c0af;
+  --color-slate-200: #e2dccb;
+  --color-slate-100: #f2eee1;
+
+  --color-sky-950: #2b160a;
+  --color-sky-900: #47230f;
+  --color-sky-800: #6b3517;
+  --color-sky-700: #92471e;
+  --color-sky-600: #c05a25;
+  --color-sky-500: #d97a3e;
+  --color-sky-400: #e2a164;
+  --color-sky-300: #eec090;
+  --color-sky-200: #f6ddbb;
+
+  --color-emerald-950: #08211f;
+  --color-emerald-900: #0e332f;
+  --color-emerald-700: #1f5a52;
+  --color-emerald-600: #2b776c;
+  --color-emerald-400: #5fbdae;
+  --color-emerald-300: #8cd4c7;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  background: #10151f;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #10151f;
+  font-feature-settings: "cv02", "cv03", "cv04";
+}
+
+button,
+a,
+select,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
